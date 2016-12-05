@@ -20,7 +20,7 @@ func getNextNumber(number string, instruction string) string {
 		case "D":
 			return "3"
 		}
-case "2":
+	case "2":
 		switch instruction {
 		case "U":
 			return "2"
@@ -31,7 +31,7 @@ case "2":
 		case "D":
 			return "6"
 		}
-case "3":
+	case "3":
 		switch instruction {
 		case "U":
 			return "1"
@@ -42,7 +42,7 @@ case "3":
 		case "D":
 			return "7"
 		}
-case "4":
+	case "4":
 		switch instruction {
 		case "U":
 			return "4"
@@ -52,8 +52,8 @@ case "4":
 			return "4"
 		case "D":
 			return "8"
-	}
-case "5":
+		}
+	case "5":
 		switch instruction {
 		case "U":
 			return "5"
@@ -64,7 +64,7 @@ case "5":
 		case "D":
 			return "5"
 		}
-case "6":
+	case "6":
 		switch instruction {
 		case "U":
 			return "2"
@@ -74,8 +74,8 @@ case "6":
 			return "7"
 		case "D":
 			return "A"
-	}
-case "7":
+		}
+	case "7":
 		switch instruction {
 		case "U":
 			return "3"
@@ -86,7 +86,7 @@ case "7":
 		case "D":
 			return "B"
 		}
-case "8":
+	case "8":
 		switch instruction {
 		case "U":
 			return "4"
@@ -97,7 +97,7 @@ case "8":
 		case "D":
 			return "C"
 		}
-case "9":
+	case "9":
 		switch instruction {
 		case "U":
 			return "9"
@@ -108,7 +108,7 @@ case "9":
 		case "D":
 			return "9"
 		}
-case "A":
+	case "A":
 		switch instruction {
 		case "U":
 			return "6"
@@ -119,7 +119,7 @@ case "A":
 		case "D":
 			return "A"
 		}
-case "B":
+	case "B":
 		switch instruction {
 		case "U":
 			return "7"
@@ -130,7 +130,7 @@ case "B":
 		case "D":
 			return "D"
 		}
-case "C":
+	case "C":
 		switch instruction {
 		case "U":
 			return "8"
@@ -141,7 +141,7 @@ case "C":
 		case "D":
 			return "C"
 		}
-case "D":
+	case "D":
 		switch instruction {
 		case "U":
 			return "B"
@@ -152,9 +152,9 @@ case "D":
 		case "D":
 			return "D"
 		}
-}
+	}
 
-return ""
+	return ""
 }
 
 func main() {
@@ -170,9 +170,9 @@ func main() {
 		for scanner.Scan() {
 			instructions := strings.Split(scanner.Text(), "")
 
-				for _, instruction := range instructions {
-					key = getNextNumber(key, instruction)
-				}
+			for _, instruction := range instructions {
+				key = getNextNumber(key, instruction)
+			}
 			log.Println(key)
 		}
 	}
