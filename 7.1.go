@@ -45,9 +45,9 @@ func main() {
 			for i := 0; i < len(bracketsStrings); i++ {
 				if hasAbba(bracketsStrings[i]) {
 					bracketsTest = false
-          if hasAbba(bracketsStrings[i]) {
-            fmt.Println(bracketsStrings[i])
-          }
+					if hasAbba(bracketsStrings[i]) {
+						fmt.Println(bracketsStrings[i])
+					}
 					break
 				}
 			}
